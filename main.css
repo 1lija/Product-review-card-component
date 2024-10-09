@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(30, 38%, 92%);
+  width: 320px;
+  height: 480px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.perfume-gabrielleEssence {
+  width: 92%;
+  height: 90%;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 0.625rem;
+}
+.perfume-gabrielleEssence img {
+  width: 100%;
+  height: 40%;
+  background-size: cover;
+  border-radius: 0.625rem 0.625rem 0 0;
+}
+.perfume-gabrielleEssence .gabrielleEssence-description {
+  margin: auto;
+  width: 90%;
+  height: 60%;
+}
+.perfume-gabrielleEssence .gabrielleEssence-description span {
+  font-size: 0.875rem;
+}
+.perfume-gabrielleEssence .gabrielleEssence-description h1 {
+  font: 1.5rem "Montserrat", sans-serif;
+  font-weight: 700;
+}/*# sourceMappingURL=main.css.map */
