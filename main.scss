@@ -1,9 +1,10 @@
 $dark-Cyan: hsl(158, 36%, 37%);
 $cream: hsl(30, 38%, 92%);
 
-$dark-blue: hsl(212, 21%, 14%);
+$very-dark-blue: hsl(212, 21%, 14%);
 $dark-grayish-blue: hsl(228, 12%, 48%);
 $white: hsl(0, 0%, 100%);
+
 @function rem($value){
     @return ($value/16) + rem
 }
@@ -23,12 +24,11 @@ justify-content: center;
 align-items: center;
 }
 
-.perfume-gabrielleEssence{
+.perfume-gabrielleEssence{ //Main part of the card
     width: 92%;
-    height: 90%;
+    height: 95%;
     background-color: $white;
     border-radius: rem(10);
-    // border: 3px solid red;
     img{
         width: 100%;
         height: 40%;
@@ -40,15 +40,82 @@ align-items: center;
         .gabrielleEssence-description{
             margin:auto;
             width: 90%;
-            height: 60%;
+            height: 37%;
                 span{
-                    font-size: rem(14);
+                    // border: 1px solid red;
+                    font-size: rem(11);
+                    color: $dark-grayish-blue;
+                    display: block;
+                    margin-top: 1rem;
+                    font-family: "Montserrat", sans-serif;
+
                 }
                 h1{
-                    // font-size: 1rem;
-                    font: 1.5rem "Montserrat", sans-serif;
+                    font: 1.55rem "Fraunces", serif;
                     font-weight: 700;
+                    color: $very-dark-blue;
+                    padding-top: rem(5);
+                    line-height: rem(32);
                 }
+                p{
+                    color: $dark-grayish-blue;
+                    font-family: "Montserrat", sans-serif;
+                    font-size: rem(12);
+                    line-height: rem(18);
+                    margin-right: rem(15);
 
+                }
         }
+
+.button-area{
+    // border: 1px solid red;
+    margin:auto;
+    width: 90%;
+    height: rem(70);
+    display: block;
+    .active{
+        color: $dark-Cyan;
+        font-weight: 700;
+        font-size: rem(24);
+        display: inline-block;
+        width: rem(130);
+        // border: 1px solid blue;
+    }
+    .on-sale{
+        display: inline-block;
+        width: rem(100);
+        font-size: rem(12);
+        text-decoration: line-through;
+        color: $dark-grayish-blue;
+        translate: -2.5rem -0.3rem;
+    }
+    button{
+        width: 100%;
+        height: rem(40);
+        border: none;
+        border-radius: rem(8);
+        // margin: auto;
+        color: $white;
+        background-color: $dark-Cyan;
+        display: flex;
+        flex-wrap: wrap;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        justify-content: center;
+        align-items: center;
+        
+            img{
+                margin-right: rem(14);
+                width: max-content;
+                height: max-content;
+            }
+    }
+
+}
+}
+
+@media only screen and (min-width: 321) {
+    body{
+        background-color: red;
+    }
 }
