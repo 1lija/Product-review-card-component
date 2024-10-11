@@ -6,7 +6,7 @@ $dark-grayish-blue: hsl(228, 12%, 48%);
 $white: hsl(0, 0%, 100%);
 
 @function rem($value){
-    @return ($value/16) + rem
+    @return $value / 16 * 1rem;
 }
 *{
     margin: 0;
@@ -14,14 +14,17 @@ $white: hsl(0, 0%, 100%);
     box-sizing: border-box;
 }
 
-
+html{
+    width: 100%;
+    height: 100%;
+}
 body{
-background-color: $cream;
-width: 320px;
-height: 480px;
-display: flex;
-justify-content: center;
-align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: $cream;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .perfume-gabrielleEssence{ //Main part of the card
@@ -34,88 +37,253 @@ align-items: center;
         height: 40%;
         background-size: cover;
         border-radius: rem(10) rem(10) 0 0;
-
+    }
+    .image2{
+        display: none;
     }
 
-        .gabrielleEssence-description{
-            margin:auto;
-            width: 90%;
-            height: 37%;
-                span{
-                    // border: 1px solid red;
-                    font-size: rem(11);
-                    color: $dark-grayish-blue;
-                    display: block;
-                    margin-top: 1rem;
-                    font-family: "Montserrat", sans-serif;
+    .gabrielleEssence-description{
+        margin:auto;
+        width: 90%;
+        height: 37%;
+            .Perfume-title{
+                // border: 1px solid red;
+                font-size: rem(11);
+                color: $dark-grayish-blue;
+                display: block;
+                margin-top: 1rem;
+                font-family: "Montserrat", sans-serif;
 
-                }
-                h1{
-                    font: 1.55rem "Fraunces", serif;
-                    font-weight: 700;
-                    color: $very-dark-blue;
-                    padding-top: rem(5);
-                    line-height: rem(32);
-                }
-                p{
-                    color: $dark-grayish-blue;
-                    font-family: "Montserrat", sans-serif;
-                    font-size: rem(12);
-                    line-height: rem(18);
-                    margin-right: rem(15);
-
-                }
-        }
-
-.button-area{
-    // border: 1px solid red;
-    margin:auto;
-    width: 90%;
-    height: rem(70);
-    display: block;
-    .active{
-        color: $dark-Cyan;
-        font-weight: 700;
-        font-size: rem(24);
-        display: inline-block;
-        width: rem(130);
-        // border: 1px solid blue;
-    }
-    .on-sale{
-        display: inline-block;
-        width: rem(100);
-        font-size: rem(12);
-        text-decoration: line-through;
-        color: $dark-grayish-blue;
-        translate: -2.5rem -0.3rem;
-    }
-    button{
-        width: 100%;
-        height: rem(40);
-        border: none;
-        border-radius: rem(8);
-        // margin: auto;
-        color: $white;
-        background-color: $dark-Cyan;
-        display: flex;
-        flex-wrap: wrap;
-        font-family: "Montserrat", sans-serif;
-        font-weight: 500;
-        justify-content: center;
-        align-items: center;
-        
-            img{
-                margin-right: rem(14);
-                width: max-content;
-                height: max-content;
+            }
+            h1{
+                font: 1.55rem "Fraunces", serif;
+                font-weight: 700;
+                color: $very-dark-blue;
+                padding-top: rem(5);
+                line-height: rem(32);
+                margin-right: rem(20);
+            }
+            pre{
+                color: $dark-grayish-blue;
+                font-family: "Montserrat", sans-serif;
+                font-size: rem(12);
+                line-height: rem(18);
+                text-align: left;
+                white-space: pre-line;
+                //  margin-right: rem(15);
             }
     }
 
-}
+    .button-area{
+        // border: 1px solid red;
+        margin:auto;
+        width: 90%;
+        height: rem(70);
+        display: block;
+        .active{
+            color: $dark-Cyan;
+            font-weight: 700;
+            font-size: rem(24);
+            display: inline-block;
+            width: rem(130);
+            font-family: "Fraunces", serif;
+        }
+        .on-sale{
+            display: inline-block;
+            width: rem(100);
+            font-size: rem(12);
+            text-decoration: line-through;
+            color: $dark-grayish-blue;
+            translate: -2.5rem -0.3rem;
+        }
+        button{
+            width: 100%;
+            height: rem(40);
+            border: none;
+            border-radius: rem(8);
+            // margin: auto;
+            color: $white;
+            background-color: $dark-Cyan;
+            display: flex;
+            flex-wrap: wrap;
+            font-family: "Montserrat", sans-serif;
+            font-weight: 500;
+            justify-content: center;
+            align-items: center;
+            
+                img{
+                    margin-right: rem(14);
+                    width: max-content;
+                    height: max-content;
+                }
+        }
+
+    }
 }
 
-@media only screen and (min-width: 321) {
-    body{
-        background-color: red;
+@media (min-width:rem(346)), (min-height: rem(570)){
+   
+       .perfume-gabrielleEssence 
+       .gabrielleEssence-description 
+       pre{
+                    width: 90%;
+                    font-size: rem(17);
+            }
+
+            .button-area{
+                margin-top: rem(40);
+            }
+       }
+
+
+@media (min-width: rem(534)) , (min-height: rem(575)){
+    .perfume-gabrielleEssence{
+        img{
+            width: rem(490);
+        }
+        .button-area button{
+            width: rem(435);
+        }
+        .button-area {
+        margin-top: rem(70);
+        }
+
+        .gabrielleEssence-description pre{
+                margin-top: rem(10);
+                width: 90%;
+                font-size: rem(17);
+            }
+}
+}
+// Adding 2 columns
+@media (min-width:rem(875)) and (min-height:rem(641)){
+   
+    .perfume-gabrielleEssence{
+        width: 30%;
+        height: 50%;
+        display: flex;
+        .image1{
+            display: none;
+        }
+        .image2{
+            border-radius: 0.6rem 0 0 0.6rem;
+            display: block;
+        }
+        img{
+            height: 100%;
+            width: 50%;
+            border-radius: 0;
+        }
+
+        .desktop-design{
+            padding-left: rem(15);
+            width: 50%;
+            height: 100%;
+            .gabrielleEssence-description{
+                height: 65%;
+                .Perfume-title{
+                    margin-top: rem(30);
+                    height: rem(30);
+                    font-size: rem(13);
+                    font-weight: 700;
+                }
+                h1{
+                    height: rem(90);
+                    width: rem(240);
+                    font-size: rem(25);
+                    line-height: rem(27);
+                }
+                pre{
+                translate: 0 -0.5rem;
+                height: rem(100);
+                width: 80%;
+                line-height: rem(25);
+                }
+            }
+            .button-area{
+                height: 25%;
+                margin-top: 0;
+                display: flex;
+                flex-wrap: wrap;
+                .active{
+                    width: rem(90);
+                }
+                .on-sale{
+                    width: max-content;
+                    align-content: center;
+                    position: relative;
+                    left: 3.5rem;
+                }
+                button{
+                    width: 100%;
+                    
+                }
+            }
+
+        }
+
+
+    }
+}
+
+@media (min-width:rem(951)) and (min-height:rem(722)){
+   
+    .perfume-gabrielleEssence{
+        .desktop-design .gabrielleEssence-description{
+        pre{
+            margin-top: rem(50);
+            width: 100%;
+            font-size: rem(18);
+            height: max-content;
+        }
+        h1{
+            width: rem(240);
+            line-height: rem(30);
+            font-size: rem(32);
+        }
+    }
+        .button-area{
+            .active{
+                font-size: rem(28);
+            }
+            .on-sale{
+                margin-left: rem(10);
+            }
+        }
+    }
+}
+
+
+@media (min-width:rem(1091)) and (min-height:rem(785)){
+    .perfume-gabrielleEssence pre{
+            margin-top: rem(20);
+            font-size: rem(30);
+        }
+    }
+
+
+@media (min-width:rem(1241)) and (min-height:rem(787)){
+    .perfume-gabrielleEssence{
+        .desktop-design{
+        pre{
+            margin-top: rem(100);
+            font-size: 5.5rem;
+        }
+        h1{
+            // border: 1px solid red;
+            width: rem(220);
+
+        }
+    }
+       .button-area{
+        .active{
+            font-size: rem(31);
+        }
+        .on-sale{
+            // border: 1px solid red;
+            bottom: .5rem;
+            margin-left: 2.1rem;
+        }
+       }
     }
 }
