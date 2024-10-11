@@ -165,7 +165,7 @@ body {
   .perfume-gabrielleEssence .desktop-design .gabrielleEssence-description h1 {
     height: 5.625rem;
     width: 13.75rem;
-    font-size: 1.5625rem;
+    font-size: 1.625rem;
     line-height: 1.6875rem;
   }
   .perfume-gabrielleEssence .desktop-design .gabrielleEssence-description pre {
@@ -234,5 +234,13 @@ body {
   .perfume-gabrielleEssence .button-area .on-sale {
     bottom: 0.5rem;
     margin-left: 2.1rem;
+  }
+}
+@media (min-width: 79.75rem) and (min-height: 53.6875rem) {
+  .perfume-gabrielleEssence .desktop-design .gabrielleEssence-description pre {
+    margin-top: 1.25rem;
+    border: 1px solid red;
+    font-size: 1.0625rem;
+    line-height: 1.375rem;
   }
 }/*# sourceMappingURL=main.css.map */
