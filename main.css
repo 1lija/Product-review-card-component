@@ -104,6 +104,10 @@ body {
   height: -moz-max-content;
   height: max-content;
 }
+.perfume-gabrielleEssence .button-area button:hover {
+  cursor: pointer;
+  background-color: hsl(158, 39%, 17%);
+}
 
 @media (min-width: 21.625rem), (min-height: 35.625rem) {
   .perfume-gabrielleEssence .gabrielleEssence-description pre {
@@ -194,18 +198,19 @@ body {
     width: 100%;
   }
 }
-@media (min-width: 59.4375rem) and (min-height: 45.125rem) {
+@media (min-width: 54.6875rem) and (min-height: 40.0625rem) {
   .perfume-gabrielleEssence .desktop-design .gabrielleEssence-description pre {
-    margin-top: 3.125rem;
+    margin-top: 0.625rem;
     width: 100%;
-    font-size: 1.125rem;
+    font-size: 0.875rem;
+    line-height: 0.9375rem;
     height: -moz-max-content;
     height: max-content;
   }
   .perfume-gabrielleEssence .desktop-design .gabrielleEssence-description h1 {
-    width: 15rem;
-    line-height: 1.875rem;
-    font-size: 2rem;
+    width: 6.25rem;
+    line-height: 1.25rem;
+    font-size: 1.25rem;
   }
   .perfume-gabrielleEssence .button-area .active {
     font-size: 1.75rem;
@@ -220,13 +225,14 @@ body {
     font-size: 1.875rem;
   }
 }
-@media (min-width: 77.5625rem) and (min-height: 49.1875rem) {
-  .perfume-gabrielleEssence .desktop-design pre {
-    margin-top: 6.25rem;
-    font-size: 5.5rem;
+@media (min-width: 77.0625rem) and (min-height: 45.875rem) {
+  .perfume-gabrielleEssence .desktop-design .gabrielleEssence-description pre {
+    margin-top: 1.25rem;
+    font-size: 1rem;
+    line-height: 1.0625rem;
   }
-  .perfume-gabrielleEssence .desktop-design h1 {
-    width: 13.75rem;
+  .perfume-gabrielleEssence .desktop-design .gabrielleEssence-description h1 {
+    width: 10.625rem;
   }
   .perfume-gabrielleEssence .button-area .active {
     font-size: 1.9375rem;
@@ -239,8 +245,12 @@ body {
 @media (min-width: 79.75rem) and (min-height: 53.6875rem) {
   .perfume-gabrielleEssence .desktop-design .gabrielleEssence-description pre {
     margin-top: 1.25rem;
-    border: 1px solid red;
     font-size: 1.0625rem;
     line-height: 1.375rem;
+  }
+  h1 {
+    width: 9.375rem;
+    height: -moz-max-content;
+    height: max-content;
   }
 }/*# sourceMappingURL=main.css.map */

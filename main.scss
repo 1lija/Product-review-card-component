@@ -116,6 +116,10 @@ body{
                     width: max-content;
                     height: max-content;
                 }
+                &:hover{
+                    cursor: pointer;
+                    background-color: hsl(158, 39%, 17%);
+                }
         }
 
     }
@@ -226,20 +230,21 @@ body{
     }
 }
 
-@media (min-width:rem(951)) and (min-height:rem(722)){
+@media (min-width:rem(875)) and (min-height:rem(641)){
    
     .perfume-gabrielleEssence{
         .desktop-design .gabrielleEssence-description{
         pre{
-            margin-top: rem(50);
+            margin-top: rem(10);
             width: 100%;
-            font-size: rem(18);
+            font-size: rem(14);
+            line-height: rem(15);
             height: max-content;
         }
         h1{
-            width: rem(240);
-            line-height: rem(30);
-            font-size: rem(32);
+            width: rem(100);
+            line-height: rem(20);
+            font-size: rem(20);
         }
     }
         .button-area{
@@ -262,16 +267,16 @@ body{
     }
 
 
-@media (min-width:rem(1241)) and (min-height:rem(787)){
+@media (min-width:rem(1233)) and (min-height:rem(734)){
     .perfume-gabrielleEssence{
-        .desktop-design{
+        .desktop-design .gabrielleEssence-description{
         pre{
-            margin-top: rem(100);
-            font-size: 5.5rem;
+            margin-top: rem(20);
+            font-size: 1rem;
+            line-height: rem(17);
         }
         h1{
-            // border: 1px solid red;
-            width: rem(220);
+            width: rem(170);
 
         }
     }
@@ -293,10 +298,13 @@ body{
     .perfume-gabrielleEssence .desktop-design 
     .gabrielleEssence-description 
     pre{
-            margin-top: rem(20);
-            border: 1px solid red;
-            font-size: rem(17);
-            line-height: rem(22);
-        }
+        margin-top: rem(20);
+        font-size: rem(17);
+        line-height: rem(22);
+    }
+    h1{
+        width: rem(150);
+        height: max-content;
+    }
     }
 
