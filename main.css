@@ -253,4 +253,19 @@ body {
     height: -moz-max-content;
     height: max-content;
   }
+  .perfume-gabrielleEssence .desktop-design .button-area .active {
+    font-size: 2.1875rem;
+  }
+}
+@media (min-width: 81.25rem) and (min-height: 56.25rem) {
+  .perfume-gabrielleEssence .desktop-design .gabrielleEssence-description h1 {
+    width: 15rem;
+    font-size: 2.25rem;
+    line-height: 1.875rem;
+  }
+  .perfume-gabrielleEssence .desktop-design .gabrielleEssence-description pre {
+    margin-top: 3.125rem;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
 }/*# sourceMappingURL=main.css.map */
